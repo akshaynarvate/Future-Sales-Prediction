@@ -32,7 +32,7 @@ def main():
 
     if st.button("Predict"):
     
-        Sale = predict_status(TV, Radio, Newspaper)
+        Sale = predict(TV, Radio, Newspaper)
         st.success("You'r Sale is: ", Sale, "Units")
 
     st.write(" ")    
