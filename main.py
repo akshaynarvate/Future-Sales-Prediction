@@ -23,9 +23,9 @@ def main():
     st.title("Future Sales Prediction Application")
 
     #getting the input
-    TV = st.text_input("Enter your TV")
-    Radio = st.text_input("Enter your Height in Radio")
-    Newspaper = st.text_input("Enter your Weight in Newspaper")
+    TV = st.text_input("Enter your TV Budget(dollars)")
+    Radio = st.text_input("Enter your Radio Budget(dollars)")
+    Newspaper = st.text_input("Enter your Newspaper(dollars)")
 
     #predict value
     diagnosis = ""
@@ -33,7 +33,7 @@ def main():
     if st.button("Predict"):
     
         diagnosis = predict_status(TV, Radio, Newspaper)
-        st.info("You're Sale is: ", diagnosis)
+        st.info(f"You're Sale is: {} Units", diagnosis)
 
     st.write(" ")    
     st.write("Project by Akshay Narvate")
