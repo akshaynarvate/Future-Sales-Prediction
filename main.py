@@ -36,8 +36,8 @@ def main():
         st.info("You're Sale is: ", diagnosis)
 
 
-    else:
-         st.write("Cannot predict please Reenter the values")
+        else:
+             st.write("Cannot predict please Reenter the values")
     st.write(" ")    
     st.write("Project by Akshay Narvate")
     
