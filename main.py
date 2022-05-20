@@ -23,9 +23,9 @@ def main():
     st.title("Future Sales Prediction Application")
 
     #getting the input
-    TV = st.text_input("Enter your TV Budget(dollars)")
-    Radio = st.text_input("Enter your Radio Budget(dollars)")
-    Newspaper = st.text_input("Enter your Newspaper(dollars)")
+    TV = st.number_input("Enter your TV Budget(dollars)")
+    Radio = st.number_input("Enter your Radio Budget(dollars)")
+    Newspaper = st.number_input("Enter your Newspaper(dollars)")
 
     #predict value
     diagnosis = ""
