@@ -13,7 +13,7 @@ st.set_page_config(page_title="Future Sales Prediction Application") #tab title
 #prediction function
 def predict_status(TV, Radio, Newspaper):
     input_data = np.asarray([TV, Radio, Newspaper])
-    input_data = input_data.reshape(1,-1)
+    #input_data = input_data.reshape(1,-1)
     prediction = model.predict(input_data)
     return prediction[0]
 
