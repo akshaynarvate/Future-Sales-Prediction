@@ -33,7 +33,7 @@ def main():
     if st.button("Predict"):
     
         Sale = predict_status(TV, Radio)
-        st.success(f"You'r Sale is: {Sale} Units")
+        st.success(f"You'r Sale is: {Sale[0]} Units")
 
     st.write(" ")    
     st.write("Project by Akshay Narvate")
